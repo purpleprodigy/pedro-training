@@ -1,6 +1,6 @@
-# Genesis Developer's Starter Child Theme
+# Genesis Child Theme for PEDro Training Website
 
-This is a developer-friendly starter child theme for the Genesis framework by Purple Prodigy. It includes a modular architectures, Sass, gulp, bourbon, neat and Composer. It is the starting child theme for all projects.
+This is a developer-friendly child theme for the Genesis framework by Purple Prodigy. It includes a modular architectures, Sass, gulp, bourbon, neat and Composer. It is the starting child theme for all projects.
 
 Note: This is a starter theme meant to be extended and customised. It is based loosely on the Genesis Sample Child Theme.
 # Features
