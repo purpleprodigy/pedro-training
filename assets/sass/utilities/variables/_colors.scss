@@ -6,19 +6,21 @@
 $white: #fff;
 $black: #000;
 $red: #c3251d;
+$orange: #BB4D00;
+$purple: #4f2b7c;
 $gray--lightest: #ccc;
 $gray--lighter: #ddd;
-$gray--light: #eee;
+$gray--light: #f0f0f0;
 $gray--medium-light: #999;
 $gray--medium: #777;
-$gray: #333;
+$gray: #222;
 
 // Site Colors
 
 $base-color: $gray;
 
-$link-color: $red;
-$link--hover-color: $gray;
+$link-color: $orange;
+$link--hover-color: $purple;
 
 $body--background-color: $gray--light;
 
@@ -90,13 +92,7 @@ $widget-title--link-color: $gray;
 $widget--background-color: $white;
 
 // Plugins
-$enews--color: $white;
-$enews--background-color: $gray;
-$enews__input--border-color: $gray;
-$enews__submit-button--background-color: $red;
-$enews__submit-button-color: $white;
-$enews__submit-button--hover-background-color: $white;
-$enews__submit-button--hover-color: $gray;
+
 
 // Footer
 $site-footer--background-color: $white;
