@@ -22,16 +22,16 @@ function load_nonadmin_files() {
 		'setup.php',
 		'components/customizer/css-handler.php',
 		'components/customizer/helpers.php',
-		'functions/formatting.php',
+		'components/favicon.php',
+//		'functions/formatting.php',
 		'functions/enqueue-assets.php',
-		'functions/markup.php',
+	//	'functions/markup.php',
+		'structure/sidebar.php',
 //		'structure/archive.php',
-		'structure/comments.php',
 //		'structure/footer.php',
 //		'structure/header.php',
 		'structure/menu.php',
 		'structure/post.php',
-//		'structure/sidebar.php',
 	);
 	load_specified_files( $filenames );
 }

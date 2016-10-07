@@ -10,13 +10,5 @@
  */
 namespace PEDRO\PedroTraining;
 
-/**
- * Unregister sidebar callbacks.
- *
- * @since 1.0.0
- *
- * @return void
- */
-function unregister_sidebar_callbacks() {
-
-}
+//* Unregister secondary sidebar
+unregister_sidebar( 'sidebar-alt' );

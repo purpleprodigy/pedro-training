@@ -4,8 +4,10 @@
 
 .site-header {
   background-color: $site-header--background-color;
+  position: relative;
+  min-height: 72px;
   > .wrap {
-    padding: 20px 0;
+    padding: 28px 0 0 24px;
   }
     @include media( $breakpoint__screen-size--medium ) {
     width: 100%;
@@ -15,3 +17,4 @@
     }
   }
 }
+

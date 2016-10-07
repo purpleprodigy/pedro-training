@@ -9,22 +9,26 @@
     max-width: $title-area--width;
     padding: 0;
 
-      @include media( $breakpoint__screen-size--medium ) {
+    @include media($breakpoint__screen-size--medium) {
       float: none;
     }
   }
 
-  .site-title > a {
-    background-position: center !important;
-    background-size: contain !important;
-    float: left;
-    min-height: $site-title--min-height;
-    width: 100%;
+  .site-title {
+    display: block;
+    text-indent: -9999px;
+  }
+}
 
-    .site-description,
-    .site-title {
-      display: block;
-      text-indent: -9999px;
-    }
+.site-title {
+  a,
+  a:hover, a:focus, a:active {
+    @include retina-image("#{$image--path}/logo-pedro", 232px, gif);
+    background-repeat: no-repeat;
+    background-position: left !important;
+    display: block;
+    min-height: 72px;
+    width: 100%;
+    text-indent: -9999px;
   }
 }
