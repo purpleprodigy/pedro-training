@@ -9,7 +9,6 @@
  * @licence     GNU General Public License 2.0+
  */
 namespace PEDRO\PedroTraining;
-
 /**
  * Unregister header callbacks.
  *
@@ -18,4 +17,5 @@ namespace PEDRO\PedroTraining;
  * @return void
  */
 function unregister_header_callbacks() {
+	unregister_sidebar( 'header-right' );
 }

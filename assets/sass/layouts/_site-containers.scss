@@ -5,16 +5,16 @@
 .site-inner,
 .wrap {
   margin: 0 auto;
-  max-width: $max-width;
+  //max-width: $max-width;
 
   @include media( $breakpoint__screen-size--larger ) {
-    max-width: $max-width--larger-screen;
+    //max-width: $max-width--larger-screen;
   }
   @include media( $breakpoint__screen-size--large ) {
-    max-width: $max-width--large-screen;
+    //max-width: $max-width--large-screen;
   }
   @include media( $breakpoint__screen-size--medium ) {
-    max-width: $max-width--medium-screen;
+    //max-width: $max-width--medium-screen;
   }
 }
 

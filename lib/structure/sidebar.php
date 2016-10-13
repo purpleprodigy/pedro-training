@@ -9,6 +9,14 @@
  * @licence     GNU General Public License 2.0+
  */
 namespace PEDRO\PedroTraining;
-
-//* Unregister secondary sidebar
-unregister_sidebar( 'sidebar-alt' );
+/**
+ * Unregister sidebar callbacks.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function unregister_sidebar_callbacks() {
+	unregister_sidebar( 'sidebar' );
+	unregister_sidebar( 'sidebar-alt' );
+}

@@ -11,12 +11,13 @@
 namespace PEDRO\PedroTraining;
 
 /**
- * Unregister menu callbacks.
+ * Unregister menu callbacks. Reposition primary navigation menu.
  *
  * @since 1.0.0
  *
  * @return void
  */
 function unregister_menu_callbacks() {
-	remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+	remove_action( 'genesis_after_header', 'genesis_do_nav' );
+	add_action( 'genesis_header', 'genesis_do_nav', 12 );
 }

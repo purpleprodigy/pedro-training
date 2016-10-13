@@ -2,11 +2,12 @@
 // Base navigation styles
 //======================================
 .genesis-nav-menu {
-  clear: both;
+  font-family: $nav--font-family;
   @include rem(font-size, $nav--font-size);
+  text-transform: uppercase;
   font-weight: 600;
   line-height: 1;
-  width: 100%;
+ letter-spacing: 0.5px;
 
   @include media($breakpoint__screen-size--medium) {
     text-align: center;
@@ -28,7 +29,7 @@
     color: $nav--link-color;
     text-decoration: none;
     display: block;
-    padding: 32px 20px;
+    padding: 12px;
   }
 
   a:hover,

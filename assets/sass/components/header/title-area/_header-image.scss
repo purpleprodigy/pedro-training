@@ -23,7 +23,7 @@
 .site-title {
   a,
   a:hover, a:focus, a:active {
-    @include retina-image("#{$image--path}/logo-pedro", 232px, gif);
+    @include retina-image("#{$image--path}/pedro-logo", 232px, png);
     background-repeat: no-repeat;
     background-position: left !important;
     display: block;

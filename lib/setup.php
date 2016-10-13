@@ -36,6 +36,9 @@ function setup_child_theme() {
  */
 function unregister_genesis_callbacks() {
 	unregister_menu_callbacks();
+	unregister_header_callbacks();
+	unregister_sidebar_callbacks();
+	unregister_layout_callbacks();
 }
 
 /**
@@ -64,17 +67,17 @@ function add_theme_supports() {
 		),
 		'genesis-responsive-viewport'     => null,
 		'custom-header'                   => array(
-			'width'           => 600,
+			'width'           => 300,
 			'height'          => 160,
 			'header-selector' => '.site-title a',
 			'header-text'     => false,
 			'flex-height'     => true,
 		),
 		'custom-background'               => null,
-		'genesis-after-entry-widget-area' => null,
-		'genesis-footer-widgets'          => 3,
+//		'genesis-after-entry-widget-area' => null,
+//		'genesis-footer-widgets'          => 3,
 		'genesis-menus'                   => array(
-			'primary'   => __( 'After Header Menu', CHILD_TEXT_DOMAIN ),
+			'primary'   => __( 'Header Menu', CHILD_TEXT_DOMAIN ),
 			'secondary' => __( 'Footer Menu', CHILD_TEXT_DOMAIN )
 		)
 	);
