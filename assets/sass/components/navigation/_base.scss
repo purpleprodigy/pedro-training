@@ -7,9 +7,9 @@
   text-transform: uppercase;
   font-weight: 600;
   line-height: 1;
- letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 
-  @include media($breakpoint__screen-size--medium) {
+  @include media($breakpoint__screen-size--smaller) {
     text-align: center;
 
     li,
@@ -36,7 +36,6 @@
   a:focus,
   .current-menu-item > a {
     color: $nav--hover-color;
-    text-decoration: underline;
   }
 
   .menu-item:hover {

@@ -2,16 +2,16 @@
 // Primary Navigation
 //======================================
 
-//.nav-primary {
-//  background-color: $primary-nav--background-color ;
-//  float: right;
-//  margin-top: 2px
-//}
+.nav-primary {
+  background-color: $primary-nav--background-color ;
+  float: right;
+  margin-top: 2px;
+}
 
 #menu-main {
   font-family: $nav--font-family;
   @include rem(font-size, $nav--font-size);
   text-transform: uppercase;
-  font-weight: 400;
   line-height: 2;
 }
+

@@ -21,6 +21,7 @@ function load_nonadmin_files() {
 	$filenames = array(
 		'setup.php',
 		'components/customizer/css-handler.php',
+		'components/customizer/customizer.php',
 		'components/customizer/helpers.php',
 		'components/favicon.php',
 //		'functions/formatting.php',
@@ -46,7 +47,7 @@ add_action( 'admin_init' , __NAMESPACE__ . '\load_admin_files' );
  */
 function load_admin_files() {
 	$filenames = array(
-		'components/customizer/customizer.php',
+
 	);
 
 	load_specified_files( $filenames );

@@ -9,7 +9,7 @@
   > .wrap {
     padding: 28px 0 0 24px;
   }
-    @include media( $breakpoint__screen-size--medium ) {
+    @include media( $breakpoint__screen-size--smaller ) {
     width: 100%;
     .wrap {
       padding-left: 5%;
