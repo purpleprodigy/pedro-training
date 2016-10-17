@@ -1,0 +1,22 @@
+//
+// Social Icons
+//======================================
+
+.social-icons {
+  overflow: hidden;
+  padding: 10px 0;
+
+  ul {
+    float: right;
+  }
+  li {
+    float: left;
+  }
+  i {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+  }
+}

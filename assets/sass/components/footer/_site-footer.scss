@@ -3,12 +3,13 @@
 //======================================
 
 .site-footer {
+  font-family: $site-footer--font-family;
   background-color: $site-footer--background-color;
   border-top: 1px solid $site-footer--border-color;
   @include rem(font-size, $site-footer--font-size );
   line-height: 1;
   padding: 60px 0;
-  text-align: center;
+  text-align: right;
   p {
     margin-bottom: 0;
   }

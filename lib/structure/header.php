@@ -17,5 +17,5 @@ namespace PEDRO\PedroTraining;
  * @return void
  */
 function unregister_header_callbacks() {
-	unregister_sidebar( 'header-right' );
+
 }

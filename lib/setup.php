@@ -36,7 +36,6 @@ function setup_child_theme() {
  */
 function unregister_genesis_callbacks() {
 	unregister_menu_callbacks();
-	unregister_header_callbacks();
 	unregister_sidebar_callbacks();
 	unregister_layout_callbacks();
 }
@@ -75,15 +74,16 @@ function add_theme_supports() {
 		),
 		'custom-background'               => null,
 //		'genesis-after-entry-widget-area' => null,
-//		'genesis-footer-widgets'          => 3,
-		'genesis-menus'                   => array(
-			'primary'   => __( 'Header Menu', CHILD_TEXT_DOMAIN ),
-			'secondary' => __( 'Footer Menu', CHILD_TEXT_DOMAIN )
-		)
+//		'genesis-footer-widgets'          => 2,
+	//	'genesis-menus'                   => array(
+	//		'primary'   => __( 'Header Menu', CHILD_TEXT_DOMAIN ),
+	//		'secondary' => __( 'Footer Menu', CHILD_TEXT_DOMAIN )
+	//	)
 	);
 	foreach ( $config as $feature => $args ) {
 		add_theme_support( $feature, $args );
 	}
+
 }
 
 /**
