@@ -27,12 +27,11 @@ function load_nonadmin_files() {
 //		'functions/formatting.php',
 		'functions/enqueue-assets.php',
 	//	'functions/markup.php',
-		'structure/sidebar.php',
-		'structure/layout.php',
+		//'structure/sidebar.php',
 		'structure/footer.php',
-		'structure/header.php',
-		'structure/menu.php',
-		'structure/post.php',
+	//	'structure/header.php',
+		//'structure/menu.php',
+	//	'structure/post.php',
 	);
 	load_specified_files( $filenames );
 }

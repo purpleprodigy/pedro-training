@@ -10,7 +10,7 @@
  */
 namespace PEDRO\PedroTraining;
 
-add_action( 'genesis_setup', __NAMESPACE__ . '\setup_child_theme' );
+add_action( 'genesis_setup', __NAMESPACE__ . '\setup_child_theme', 15 );
 /**
  * Setup child theme.
  *
@@ -20,11 +20,34 @@ add_action( 'genesis_setup', __NAMESPACE__ . '\setup_child_theme' );
  */
 function setup_child_theme() {
 	load_child_theme_textdomain( CHILD_TEXT_DOMAIN, apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/languages', CHILD_TEXT_DOMAIN ) );
-
-	unregister_genesis_callbacks();
-
+	unregister_layouts();
+	//unregister_genesis_callbacks();
+	unregister_sidebar( 'sidebar' );
+	unregister_sidebar( 'sidebar-alt' );
 	add_theme_supports();
 	adds_new_image_sizes();
+}
+
+/**
+ * Unregister the Genesis Layouts.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function unregister_layouts() {
+	$layouts = array(
+		'sidebar-content',
+		'content-sidebar',
+		'content-sidebar-sidebar',
+		'sidebar-content-sidebar',
+		'sidebar-sidebar-content',
+	);
+	foreach( $layouts  as $layout ) {
+		genesis_unregister_layout( $layout );
+	}
+	// temporary fix for Genesis bug 06.22.2016
+	genesis_set_default_layout( 'full-width-content' );
 }
 
 /**
@@ -35,9 +58,7 @@ function setup_child_theme() {
  * @return void
  */
 function unregister_genesis_callbacks() {
-	unregister_menu_callbacks();
-	unregister_sidebar_callbacks();
-	unregister_layout_callbacks();
+	//unregister_menu_callbacks();
 }
 
 /**
@@ -65,25 +86,24 @@ function add_theme_supports() {
 			'skip-links'
 		),
 		'genesis-responsive-viewport'     => null,
-		'custom-header'                   => array(
-			'width'           => 300,
-			'height'          => 160,
-			'header-selector' => '.site-title a',
-			'header-text'     => false,
-			'flex-height'     => true,
-		),
-		'custom-background'               => null,
+//		'custom-header'                   => array(
+//			'width'           => 300,
+//			'height'          => 160,
+//			'header-selector' => '.site-title a',
+//			'header-text'     => false,
+//			'flex-height'     => true,
+//		),
+		//'custom-background'               => null,
 //		'genesis-after-entry-widget-area' => null,
 //		'genesis-footer-widgets'          => 2,
-	//	'genesis-menus'                   => array(
-	//		'primary'   => __( 'Header Menu', CHILD_TEXT_DOMAIN ),
-	//		'secondary' => __( 'Footer Menu', CHILD_TEXT_DOMAIN )
-	//	)
+		'genesis-menus'                   => array(
+			'primary'   => __( 'Header Menu', CHILD_TEXT_DOMAIN ),
+			'secondary' => __( 'Footer Menu', CHILD_TEXT_DOMAIN )
+		)
 	);
 	foreach ( $config as $feature => $args ) {
 		add_theme_support( $feature, $args );
 	}
-
 }
 
 /**
@@ -126,12 +146,12 @@ function set_theme_settings_defaults( array $defaults ) {
 
 add_action( 'after_switch_theme', __NAMESPACE__ . '\update_theme_setting_defaults' );
 /**
- * Update the theme settings defaults.
- *
- * @since 1.0.0
- *
- * @return void
- */
+* Update the theme settings defaults.
+*
+* @since 1.0.0
+*
+* @return void
+*/
 function update_theme_setting_defaults() {
 	$config = get_theme_settings_defaults();
 	if ( function_exists( 'genesis_update_settings' ) ) {

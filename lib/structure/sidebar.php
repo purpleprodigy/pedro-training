@@ -17,5 +17,5 @@ namespace PEDRO\PedroTraining;
  * @return void
  */
 function unregister_sidebar_callbacks() {
-	unregister_sidebar( 'sidebar-alt' );
+
 }
