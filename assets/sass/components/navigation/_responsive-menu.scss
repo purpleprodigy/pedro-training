@@ -19,7 +19,7 @@
   display: none;
   visibility: hidden;
 
-  @include media($breakpoint__screen-size--small) {
+  @include media($breakpoint__screen-size--medium) {
     border-width: 0;
     background-color: $nav-toggle--background-color;
     color: $nav-toggle-color;

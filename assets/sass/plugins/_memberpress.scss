@@ -1,0 +1,20 @@
+//
+// MemberPress
+//======================================
+
+#mepr-account-links {
+  .widget-title {
+    display: none;
+  }
+  font-family: $nav--font-family;
+  @include rem(font-size, $nav--font-size);
+  text-transform: uppercase;
+  ul li {
+    display: inline;
+    a {
+      padding: 12px;
+
+    }
+  }
+
+}

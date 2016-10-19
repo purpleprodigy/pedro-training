@@ -22,7 +22,7 @@ function setup_child_theme() {
 	load_child_theme_textdomain( CHILD_TEXT_DOMAIN, apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/languages', CHILD_TEXT_DOMAIN ) );
 	unregister_layouts();
 	unregister_genesis_callbacks();
-	reposition_secondary_nav_to_sidebar();
+	//reposition_secondary_nav_to_sidebar();
 	unregister_sidebar( 'sidebar' );
 	unregister_sidebar( 'sidebar-alt' );
 	add_theme_supports();
@@ -38,7 +38,7 @@ function setup_child_theme() {
  */
 function unregister_layouts() {
 	$layouts = array(
-		//'sidebar-content',
+		'sidebar-content',
 		'content-sidebar',
 		'content-sidebar-sidebar',
 		'sidebar-content-sidebar',
@@ -48,7 +48,7 @@ function unregister_layouts() {
 		genesis_unregister_layout( $layout );
 	}
 	// temporary fix for Genesis bug 06.22.2016
-	//genesis_set_default_layout( 'sidebar-content' );
+	genesis_set_default_layout( 'full-width-content' );
 }
 
 /**
@@ -99,7 +99,7 @@ function add_theme_supports() {
 //		'genesis-footer-widgets'          => 2,
 		'genesis-menus'                   => array(
 			'primary'   => __( 'Header Menu', CHILD_TEXT_DOMAIN ),
-			'secondary' => __( 'Sidebar Menu', CHILD_TEXT_DOMAIN )
+			'secondary' => __( 'Footer Menu', CHILD_TEXT_DOMAIN )
 		)
 	);
 	foreach ( $config as $feature => $args ) {

@@ -4,11 +4,10 @@
 
 .nav-primary {
   background-color: $primary-nav--background-color;
-  border-top: 1px solid $gray--lighter;
   width: 100%;
-  float: left;
+  text-align: center;
   margin-top: 2px;
-  @include media($breakpoint__screen-size--small) {
+  @include media($breakpoint__screen-size--medium) {
     border: none;
   }
 }

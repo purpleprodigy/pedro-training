@@ -27,7 +27,7 @@ function load_nonadmin_files() {
 //		'functions/formatting.php',
 		'functions/enqueue-assets.php',
 	//	'functions/markup.php',
-		'structure/sidebar.php',
+		//'structure/sidebar.php',
 		'structure/footer.php',
 	//	'structure/header.php',
 		//'structure/menu.php',
