@@ -18,4 +18,6 @@ namespace PEDRO\PedroTraining;
  * @return void
  */
 function unregister_post_callbacks() {
+	//* Remove the post info
+	remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 }

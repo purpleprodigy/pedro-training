@@ -21,7 +21,7 @@ add_action( 'genesis_setup', __NAMESPACE__ . '\setup_child_theme', 15 );
 function setup_child_theme() {
 	load_child_theme_textdomain( CHILD_TEXT_DOMAIN, apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/languages', CHILD_TEXT_DOMAIN ) );
 	unregister_layouts();
-	//unregister_genesis_callbacks();
+	unregister_genesis_callbacks();
 	unregister_sidebar( 'sidebar' );
 	unregister_sidebar( 'sidebar-alt' );
 	add_theme_supports();
@@ -58,7 +58,7 @@ function unregister_layouts() {
  * @return void
  */
 function unregister_genesis_callbacks() {
-	//unregister_menu_callbacks();
+	unregister_post_callbacks();
 }
 
 /**
