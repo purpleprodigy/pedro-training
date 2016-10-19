@@ -99,7 +99,7 @@ function add_theme_supports() {
 //		'genesis-footer-widgets'          => 2,
 		'genesis-menus'                   => array(
 			'primary'   => __( 'Header Menu', CHILD_TEXT_DOMAIN ),
-			'secondary' => __( 'Footer Menu', CHILD_TEXT_DOMAIN )
+			'secondary' => __( 'Sidebar Menu', CHILD_TEXT_DOMAIN )
 		)
 	);
 	foreach ( $config as $feature => $args ) {
