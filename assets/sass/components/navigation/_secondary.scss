@@ -4,6 +4,25 @@
 
 .nav-secondary {
   background-color: $secondary-nav--background-color;
-  border-top: 1px solid $secondary-nav--border-color;
   text-align: center;
-}
+  .menu-item {
+    display: list-item;
+    line-height: $secondary-nav--line-height;
+  }
+  ul {
+    margin: 30px;
+  }
+  ul ul {
+    margin: 0 0 0 10px;
+    font-size: $secondary-nav-ul-ul--font-size;
+  }
+  ul.menu li {
+    border-top: 1px dotted $gray--lighter;
+    padding: 4px 1px;
+    margin-bottom: 0;
+  }
+    a {
+      padding: 3px 13px;
+    }
+
+  }

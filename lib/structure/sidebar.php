@@ -10,12 +10,14 @@
  */
 namespace PEDRO\PedroTraining;
 /**
- * Unregister sidebar callbacks.
+ * Reposition secondary navigation to sidebar.
  *
  * @since 1.0.0
  *
  * @return void
  */
-function unregister_sidebar_callbacks() {
+function reposition_secondary_nav_to_sidebar() {
+	remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+	add_action( 'genesis_before_sidebar_widget_area', 'genesis_do_subnav' );
 
 }

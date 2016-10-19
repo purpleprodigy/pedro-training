@@ -22,6 +22,7 @@ function setup_child_theme() {
 	load_child_theme_textdomain( CHILD_TEXT_DOMAIN, apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/languages', CHILD_TEXT_DOMAIN ) );
 	unregister_layouts();
 	unregister_genesis_callbacks();
+	reposition_secondary_nav_to_sidebar();
 	unregister_sidebar( 'sidebar' );
 	unregister_sidebar( 'sidebar-alt' );
 	add_theme_supports();
@@ -37,7 +38,7 @@ function setup_child_theme() {
  */
 function unregister_layouts() {
 	$layouts = array(
-		'sidebar-content',
+		//'sidebar-content',
 		'content-sidebar',
 		'content-sidebar-sidebar',
 		'sidebar-content-sidebar',
@@ -47,7 +48,7 @@ function unregister_layouts() {
 		genesis_unregister_layout( $layout );
 	}
 	// temporary fix for Genesis bug 06.22.2016
-	genesis_set_default_layout( 'full-width-content' );
+	//genesis_set_default_layout( 'sidebar-content' );
 }
 
 /**
@@ -175,6 +176,6 @@ function get_theme_settings_defaults() {
 		'content_archive_limit'     => 0,
 		'content_archive_thumbnail' => 0,
 		'posts_nav'                 => 'numeric',
-		'site_layout'               => 'content-sidebar',
+	//	'site_layout'               => 'sidebar-content',
 	);
 }
