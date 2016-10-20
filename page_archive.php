@@ -19,21 +19,17 @@ add_action( 'genesis_post_content', __NAMESPACE__ . '\genesis_page_archive_conte
 
 
 /**
- * This function outputs sitemap-esque columns displaying all pages,
- * categories, authors, monthly archives, and recent posts.
+ * This function outputs a sitemap displaying  pages required to be shown.
  *
  * @since 1.6
  */
-function genesis_page_archive_content() { ?>
-
-		<?php wp_list_pages(
-			'exclude=11,12,79',
-			'title_li=',
-			'sort_column=post_date'
-) ?>
-
-
-	<?php
+function genesis_page_archive_content() {
+	wp_list_pages( array(
+		'exclude'     => 79,
+		'title_li'    => '',
+		'sort_column' => 'post_date'
+	) );
 }
 
 genesis();
+

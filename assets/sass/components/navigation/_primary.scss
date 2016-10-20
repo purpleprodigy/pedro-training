@@ -16,6 +16,5 @@
   font-family: $nav--font-family;
   @include rem(font-size, $nav--font-size);
   text-transform: uppercase;
-  line-height: $primary-nav--line-height;
 }
 
