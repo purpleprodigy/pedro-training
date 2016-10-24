@@ -7,7 +7,7 @@
   width: 100%;
   text-align: center;
   margin-top: 2px;
-  @include media($breakpoint__screen-size--medium) {
+  @include media($breakpoint__screen-size--large) {
     border: none;
   }
 }
@@ -15,6 +15,5 @@
 #menu-main {
   font-family: $nav--font-family;
   @include rem(font-size, $nav--font-size);
-  text-transform: uppercase;
 }
 
