@@ -11,7 +11,7 @@
 namespace PEDRO\PedroTraining;
 
 /**
- * Show English menu to parent and sub-pages of /english/ only.
+ * Show English menu to parent and sub-pages of English template only.
  *
  * @since 1.0.0
  *
@@ -22,7 +22,7 @@ namespace PEDRO\PedroTraining;
 function show_english_nav_menu( $args ){
 	if( ( 'primary' == $args['theme_location'] ) && (is_page_template( 'english.php') ) )
 	{
-		$args['menu'] = 'English'; // Add your menu name here. My case it is "Menu for Page"
+		$args['menu'] = 'English';
 	}
 
 	return $args;
