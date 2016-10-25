@@ -30,7 +30,7 @@ function load_nonadmin_files() {
 		//'structure/sidebar.php',
 		'structure/footer.php',
 	//	'structure/header.php',
-		//'structure/menu.php',
+		'structure/menu.php',
 		'structure/post.php',
 	);
 	load_specified_files( $filenames );

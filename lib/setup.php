@@ -22,7 +22,7 @@ function setup_child_theme() {
 	load_child_theme_textdomain( CHILD_TEXT_DOMAIN, apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/languages', CHILD_TEXT_DOMAIN ) );
 	unregister_layouts();
 	unregister_genesis_callbacks();
-	//reposition_secondary_nav_to_sidebar();
+	//show_english_nav_menu();
 	unregister_sidebar( 'sidebar' );
 	unregister_sidebar( 'sidebar-alt' );
 	add_theme_supports();
