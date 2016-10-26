@@ -20,7 +20,7 @@ namespace PEDRO\PedroTraining;
  * @return mixed
  */
 function show_english_nav_menu( $args ){
-	if( ( 'primary' == $args['theme_location'] ) && (is_page_template( 'english.php') ) )
+	if( ( 'primary' == $args['theme_location'] ) && (is_page_template( 'english.php') || (is_page( '12' ) )) )
 	{
 		$args['menu'] = 'English';
 	}
