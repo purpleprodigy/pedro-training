@@ -42,3 +42,7 @@ b,
 strong {
   font-weight: 700;
 }
+
+:target {
+  background-color: $gray--lighter;
+}
