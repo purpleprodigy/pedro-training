@@ -22,7 +22,7 @@ add_filter( 'genesis_footer_creds_text', __NAMESPACE__ . '\pp_footer_creds_filte
  */
 function pp_footer_creds_filter( $creds ) {
 
-	$creds = 'Copyright [footer_copyright] <a href="https://training.pedro.org.au">PEDro Scale Training</a> &middot; <a href="/contact/">Contact</a> &middot; <a href="/sitemap/" rel="nofollow">Sitemap</a> &middot; <a href="/terms/" rel="nofollow">Terms &amp; Conditions</a> &middot; Website by <a href="http://www.purpleprodigy.com">Purple Prodigy</a><br>
+	$creds = 'Copyright [footer_copyright] <a href="https://training.pedro.org.au">2016 Physiotherapy Evidence Database (PEDro)</a> &middot; <a href="/contact/">Contact</a> &middot; <a href="/sitemap/" rel="nofollow">Sitemap</a> &middot; <a href="/terms/" rel="nofollow">Terms &amp; Conditions</a> &middot; Website by <a href="http://www.purpleprodigy.com">Purple Prodigy</a><br>
 <div class="social-icons">
 		<ul>
 			<li><a href="http://www.facebook.com/PhysiotherapyEvidenceDatabase.PEDro"><i class="fa fa-facebook"><span class="screen-reader-text">Like us on Facebook</span></i></a>
