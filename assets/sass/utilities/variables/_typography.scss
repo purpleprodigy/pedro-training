@@ -3,14 +3,9 @@
 //======================================
 
 // Common Fonts
-$font-family--source-sans-pro: 'Source Sans Pro', sans-serif;
-$font-family--muli: 'Muli', sans-serif;
-$font-family--lato: Lato, sans-serif;
-$font-family--helvetica: Helvetica, arial, sans-serif;
-$font-family--opensans: 'Open Sans', Helvetica, Arial, sans-serif;
 $font-family--lora: 'Lora', serif;
 $font-family--poppins: 'Poppins', sans-serif;
-$font-family--serif: Georgia, Times, serif;
+
 
 // Base
 $html--font-size: 62.5%;
@@ -32,15 +27,14 @@ $h4--font-size: floor(modular-scale(3, $base--font-size, $major-second));
 $h5--font-size: floor(modular-scale(2, $base--font-size, $major-second));
 $h6--font-size: floor(modular-scale(1, $base--font-size, $major-second));
 
-// Navigation
-$nav--font-family: $font-family--poppins;
-$nav--font-size: 12px;
-$submenu--font-size: 11px;
-$archive-pagination--font-size: 16px;
-
 // Header
 $site-title--font-size: 30px;
 $site-description--font-size: 16px;
+
+// Navigation
+$nav--font-family: $font-family--poppins;
+$nav--font-size: 12px;
+$archive-pagination--font-size: 16px;
 
 // Footer
 $site-footer--font-family: $font-family--poppins;
@@ -57,19 +51,3 @@ $entry-footer__entry-meta--font-size: 16px;
 $blockquote--font-size: 20px;
 $input--font-size: 16px;
 $button--font-size: 16px;
-
-// Widgets
-$widget-title--font-size: 18px;
-$featured-content__entry-title--font-size: 18px;
-$sidebar--font-size: 16px;
-
-// Comments
-$comments--font-size: 16px;
-
-// General Components
-$breadcrumb--font-size: 16px;
-$after-entry--font-size: 18px;
-$archive-title--font-size: 20px;
-$archive-description--font-size: 18px;
-$caption--font-size: 14px;
-

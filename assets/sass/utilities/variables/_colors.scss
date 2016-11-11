@@ -24,6 +24,10 @@ $link--hover-color: $purple;
 
 $body--background-color: $gray--light;
 
+// Header
+$site-title--link-color: $gray;
+$site-header--background-color: $white;
+
 // Elements
 $hr--border-color: $gray--light;
 
@@ -41,28 +45,13 @@ $button--hover-color: $white;
 $button--disabled-background-color: $gray--light;
 $button--disabled-color: $gray--medium;
 
-// Tables
-$table-body--border-color: $gray--light;
-$table-cell--border-color: $gray--light;
-
-// Header
-$site-title--link-color: $gray;
-$site-header--background-color: $white;
-
 // Navigation
 $nav--link-color: $gray;
 $nav--hover-color: $red;
 
-$submenu--border-color: $gray--light;
-$submenu--link-background-color: $white;
-
 $primary-nav--background-color: $white;
 $primary-nav--border-color: $gray--light;
 $primary-nav--link-color: $nav--link-color;
-
-$secondary-nav--background-color: $white;
-$secondary-nav--border-color: $gray--light;
-$secondary-nav--link-color: $nav--link-color;
 
 $js-nav--background-color: $white;
 $js-nav--hover-color: $black;
@@ -87,27 +76,13 @@ $entry-footer__meta--border-color: $gray--light;
 $entry-content__code--background-color: $gray;
 $entry-content__code--border-color: $gray--light;
 
-// Widgets
-$widget-title--link-color: $gray;
-$widget--background-color: $white;
-
-// Plugins
-
-
 // Footer
 $site-footer--background-color: $white;
 $site-footer--border-color: $gray--light;
 $footer-widgets--background-color: $white;
-
-// Comments
-$comments--background-color: $white;
 
 // General Components
 $breadcrumb--background-color: $white;
 $author-box--background-color: $white;
 $after-entry--background-color: $white;
 $archive-description--background-color: $white;
-
-// Gallery
-$gallery--border-color: $gray--light;
-$gallery--hover-border-color: $gray--medium-light;

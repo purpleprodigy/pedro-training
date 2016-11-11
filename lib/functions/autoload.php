@@ -24,12 +24,8 @@ function load_nonadmin_files() {
 		'components/customizer/customizer.php',
 		'components/customizer/helpers.php',
 		'components/favicon.php',
-//		'functions/formatting.php',
 		'functions/enqueue-assets.php',
-	//	'functions/markup.php',
-		//'structure/sidebar.php',
 		'structure/footer.php',
-	//	'structure/header.php',
 		'structure/menu.php',
 		'structure/post.php',
 	);
